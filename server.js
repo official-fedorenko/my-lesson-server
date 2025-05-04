@@ -1,7 +1,9 @@
 const express = require("express"); // Подключаем библиотеку express
+const cors = require("cors"); // Подключаем библиотеку cors
 const app = express(); // Создаём приложение (сервер)
 const port = process.env.PORT || 3000; // Берём порт из окружения или 3000
 
+app.use(cors()); // Подключаем библиотеку cors
 app.use(express.static("public")); // Разрешаем серверу отдавать все файлы из папки public
 
 app.get("/", (req, res) => {
