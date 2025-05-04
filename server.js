@@ -30,6 +30,12 @@ const products = [
     price: 7.5,
     description: "Многоразовая тканевая сумка для покупок.",
   },
+  {
+    id: 4,
+    name: "Блокнот",
+    price: 4.99,
+    description: "Блокнот в клетку на 100 страниц.",
+  },
 ];
 
 app.get("/api/products", (req, res) => {
